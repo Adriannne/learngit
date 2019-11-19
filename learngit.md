@@ -170,3 +170,10 @@ git tag -d <tag_name>  #删除tag
 git push origin <tagname>    #推送到远程仓库
 git push origin --tags    #全部推送
 ```
+
+### 11.常见报错
+
+#### error:1400410B:SSL routines:CONNECT_CR_SRVR_HELLO:wrong version number
+将https改为http协议。
+git clone http://github.com/jackfrued/Python-100-Days.git
+可能是公司限制，ssh协议会报错没有权限。
